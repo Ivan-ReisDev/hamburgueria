@@ -47,6 +47,10 @@ nav {
     z-index: 20;
 }
 
+span {
+    border-bottom: 4px solid rgb(255, 196, 0);
+}
+
 ::-webkit-scrollbar-track {
     background-color: #000000;
 }
@@ -204,7 +208,7 @@ nav {
 .imagem a {
     font-size: 20px;
     color: white;
-    border-bottom: 4px solid rgb(255, 196, 0);
+    border-bottom: 4px solid #ffc400;
     
 }
 
@@ -220,6 +224,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .loccima {
@@ -243,6 +248,7 @@ nav {
 
 .loccima a:hover {
     background-color: #d3d3d3;
+    color: #000000;
 }
 
 .locbaixo {
@@ -259,6 +265,49 @@ nav {
 .loccima-interno h2 {
     font-size: 45px;
 }
+
+.quemsomos {
+    width: 100vw;
+    height: 600px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px ;
+} 
+
+.quemsomos-esquerda {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quemsomos-esquerda img {
+    width: 500px;
+}
+
+.quemsomos-direita {
+    width: 50vw;
+}
+
+.quemsomos-direita p {
+    width: 500px;
+}
+
+.quemsomos-direita h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.quemsomos-direita img {
+    width: 80px;
+}
+
+.map-site {
+    background-color: white;
+}
+
 
 
 @media (max-width:999px) {
