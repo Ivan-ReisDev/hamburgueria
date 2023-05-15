@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100vh;
+    overflow-x: hidden;
+    background-color:rgb(0, 0, 0);
+}
+
+main {
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 88vh;
+}
+a {
+    color: rgb(0, 0, 0);
+}
+
+a, 
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 25;
+   
+}
+
+nav {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    z-index: 20;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+::-webkit-scrollbar {
+    width: 3px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+#preloader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#content {
+    display: none;
+    position: absolute;
+}
+
+.principal {
+    z-index: 25;
+}
+
+.segundaria {
+    position: relative;
+    top: 12vh;
+}
+.logo { 
+    margin-left: 10%;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo img:hover {
+    width: 80px;
+    opacity: .5;
+    
+}
+
+.nav-list {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-list a:hover {
+    border-bottom: 4px solid rgb(255, 196, 0);
+}
+
+.cardapio {
+    border-bottom: 4px solid rgb(255, 196, 0);
+}
+
+.nav-list li {
+    font-weight: 400;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.mobile-menu  {
+    display: none;
+    width: 32px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 8px;
+} 
+#btn-open {
+    display: none;
+}
+/* CARROSSEL */
+.carrossel-main {
+    height: 80vh;
+    top: 12vh;
+    margin: 0;
+} 
+.carrossel-main img {
+    height: 80vh;
+    border-top: 2px solid rgb(255, 196, 0);
+    border-bottom: 2px solid rgb(255, 196, 0);
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(255, 196, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next {
+    position: absolute;
+    right: 40px;
+} 
+
+.slick-prev {
+    position:absolute;
+    left: 10px;
+    z-index: 10;
+}
+
+.cardapio-section {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+}
+
+
+.cardapio-topo {
+    margin: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cutelo {
+    width: 70px;
+}
+
+.cardapio-meio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.cardapio-meio img {
+    width: 250px;
+    margin-bottom: 0px ;
+}
+
+.imagem {
+    margin: 0 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.imagem a {
+    font-size: 20px;
+    color: white;
+    border-bottom: 4px solid rgb(255, 196, 0);
+    
+}
+
+.img2 img,
+.img3 img {
+    margin-top: 40px;
+}
+
+.localizacao {
+    padding-top: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.loccima {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loccima a {
+    background-color:rgb(255, 196, 0);
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: .6;
+}
+
+.loccima a:hover {
+    background-color: #d3d3d3;
+}
+
+.locbaixo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+.loccima-interno img {
+    width: 100px;
+}
+
+.loccima-interno h2 {
+    font-size: 45px;
+}
+
+
+@media (max-width:999px) {
+
+    .logo {
+        margin: 0;
+        position: absolute;
+        right: 50%;
+        left: 50%;
+    }
+    nav {
+        position: absolute;
+        top: 12vh;
+        width: 300px;
+        transform: translate(-100%);
+        transition: 1s;
+    }
+    #btn-open {
+        display: block;
+        font-size: 35px;
+        border: none;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left: 10px;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        justify-content: flex-start;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-list a:hover {
+        transition: 0.6s;
+        border: none;
+    }
+    .nav-list li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        width: 100%;
+    }
+
+    .nav-list li:hover {
+        background-color: rgb(0, 0, 0);
+  
+    }
+
+    .nav-list li:first-child {
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+
+    .nav-list a {
+        padding: 10px 115px;
+    }
+
+    .mobile-menu div, nav{
+        display: block;
+    }
+    
+
+}
+
