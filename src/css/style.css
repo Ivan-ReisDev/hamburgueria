@@ -50,6 +50,16 @@ nav {
 span {
     border-bottom: 4px solid rgb(255, 196, 0);
 }
+footer {
+    width:100% ;
+    height: 200px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(94, 94, 94);
+    font-size: 15px;
+}
 
 ::-webkit-scrollbar-track {
     background-color: #000000;
@@ -306,9 +316,27 @@ span {
 
 .map-site {
     background-color: white;
+    padding-top: 40px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
 }
 
+.map-one {
+    display: flex;
+    flex-direction: column;
+}
 
+.map-siteum {
+    width: 250px;
+}
+
+.map-site i {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
 
 @media (max-width:999px) {
 
