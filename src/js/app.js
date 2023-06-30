@@ -1,11 +1,10 @@
 // Adiciona a classe 'active' ao link atualmente selecionado
-
 // Onload 
 function loading() {
     document.querySelector('#preloader');
     preloader.style.display = 'none';
     document.querySelector('#content');
-    content.style.display= 'block';
+    content.style.display = 'block';
 }
 // menu sidebar 
 
@@ -14,17 +13,19 @@ var $navList = document.querySelector('#nav-list');
 var $icon = document.getElementById('icon');
 var sidebar = false;
 
-function btn(){
-    sidebar = !sidebar;
-    if(sidebar) {
+function btn() {
+    sidebar = true;
+    if (sidebar) {
+        console.log(sidebar)
         $navList.style.transform = "translate(0%)";
-        $icon.classList.toggle("fa-bars")
-        $icon.classList.toggle("fa-xmark")
-    } else {
+    } 
+}
+
+function btnClose() {
+   sidebar = true;
+    if (sidebar) {
+        console.log(sidebar)
         $navList.style.transform = ""
-        $icon.classList.toggle("fa-xmark")
-        $icon.classList.toggle("fa-bars")
-        
     }
 }
 // -------------Carrossel --------------
